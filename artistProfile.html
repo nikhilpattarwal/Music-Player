@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="artistProfile.css" />
+    <script src="https://kit.fontawesome.com/07e9793f39.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- -----------------------------------------------Head nav bar------------------------------------------------------ -->
+    <nav class="complete-nav-bar">
+        <div class="nav-bar-proper">
+            <div id="icon-text">
+                <a href="musicplayerweb.html" >
+                <div class="m-icon-ni-studio">
+                    <span><i class="fa-solid fa-music"></i></span>
+                    <div id="ninja-studio"><span id="ninja"> Ninja </span> <br> <span id="studio">Studio</span></div>
+                </div>
+            </a>
+                <div id="favourites">
+                    <p> Favourites</p>
+                </div>
+            </div>
+            <div class="s-bar-bell-profile">
+                <div>
+                    <form id="sb-b-si">
+                        <button id="search" type="submit"> <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <input id="search-box" type="text" placeholder="Search...">
+                    </form>
+                </div>
+
+                <div><i id="mic-icon" class="fa-solid fa-microphone"></i></div>
+                <div> <i id="bell-icon" class="fa-solid fa-bell"></i></div>
+                <!-- <div><i id="profile-icon" class="ri-account-circle-fill"></i></div>  -->
+                <div class="open-queue">Queue <i class="fa-solid fa-angle-down angle-down-arrow"></i>
+                </div>
+                <div><i id="profile-icon" class="fa-solid fa-id-card-clip"></i></div>
+            </div>
+        </div>
+    </nav>
+     
+    <!-- ------------------------------------------------main--------------------------------------------------------- -->
+    <div class="main-container">
+        <div class="main-artist">
+            <div class="artist-banner">
+                <div class="banner-img">
+                    <img class="arctic-monkeys-img"
+                        src="https://imgix.ranker.com/user_node_img/25/487034/original/487034-photo-u206107620?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                </div>
+
+                <div class="display-banner-text">
+                    <div class="name-followers">
+                        <h1 class="main-d-h-name">
+                            <b>Arctic Monkeys</b>
+                        </h1>
+                        <h6 class="follow-number">
+                            900 Followers
+                        </h6>
+                    </div>
+                    <div class="band-name"> English Rock band</div>
+                    <div class="follow-number band-info-edit">
+                        Arctic Monkeys is an English rock band formed in Sheffield in 2002. The group consists of Alex
+                        Turner (lead vocals, guitar, piano), Matt Helders (drums, vocals), Jamie Cook (guitar,
+                        keyboards) and Nick O'Malley (bass guitar, backing vocals).
+                    </div>
+                    <div class="follow-play">
+                        <button type="button" class="play-all-button">
+                            <div class="play-all-text">Play All</div> <i class="fa-solid fa-play play-icon"></i>
+                        </button>
+                        <button class="follow-number follow-button">Follow</button>
+                    </div>
+
+                    <div class="albums-tracks"> 9 Albums | 52 Tracks</div>
+
+                </div>
+
+            </div>
+            <div class="artist-song-list-collection">
+             <div class="artist-songs-list">
+                <div class="song-list-collection">
+                    <div class="num-img-text">
+                    <div class="num-before-img">01</div>
+                    <div>
+                    <img class="music-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2F993847e827b266737a2de0542976fa99.1000x1000x1.jpg">
+                    <img class="music-img-song-list background-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2F993847e827b266737a2de0542976fa99.1000x1000x1.jpg">
+                    </div>
+
+                    <div class="song-list-artist-band-name">
+                        <div class="song-list-song-name">Do I Wana know?</div>
+
+                        <div class="band-name-in-songs-list">Arctic Monkeys</div>
+                    </div>
+                    </div>
+                    <div class="plus-heart-icon">
+                        <button class="songs-list-heart-icon"> <i
+                                class="fa-sharp fa-regular fa-heart like-heart-icon"></i> </button>
+                        <button class="songs-list-plus-icon"> <i class="fa-sharp fa-regular fa-plus"></i> </button>
+                    </div>
+
+                </div>
+
+             </div>
+
+             <div class="artist-songs-list">
+                <div class="song-list-collection">
+                    <div class="num-img-text">
+                    <div class="num-before-img">02</div>
+                    <div>
+                    <img class="music-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2Fb4cc659273a75e6172be0a0e99bf2b14.600x600x1.jpg">
+                    <img class="music-img-song-list background-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2Fb4cc659273a75e6172be0a0e99bf2b14.600x600x1.jpg">
+                    </div>
+
+                    <div class="song-list-artist-band-name">
+                        <div class="song-list-song-name">Fluorescent Adolescent</div>
+
+                        <div class="band-name-in-songs-list">Arctic Monkeys</div>
+                    </div>
+                    </div>
+                    <div class="plus-heart-icon">
+                        <button class="songs-list-heart-icon"> <i
+                                class="fa-sharp fa-regular fa-heart like-heart-icon"></i> </button>
+                        <button class="songs-list-plus-icon"> <i class="fa-sharp fa-regular fa-plus"></i> </button>
+                    </div>
+
+                </div>
+
+             </div>
+
+             <div class="artist-songs-list">
+                <div class="song-list-collection">
+                    <div class="num-img-text">
+                    <div class="num-before-img">03</div>
+                    <div>
+                    <img class="music-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2Fefe371341a9100560c5e6dc23cbeb6c0.1000x1000x1.jpg">
+                    <img class="music-img-song-list background-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2Fefe371341a9100560c5e6dc23cbeb6c0.1000x1000x1.jpg">
+                    </div>
+
+                    <div class="song-list-artist-band-name">
+                        <div class="song-list-song-name">R U Mine?</div>
+
+                        <div class="band-name-in-songs-list">Arctic Monkeys</div>
+                    </div>
+                    </div>
+                    <div class="plus-heart-icon">
+                        <button class="songs-list-heart-icon"> <i
+                                class="fa-sharp fa-regular fa-heart like-heart-icon"></i> </button>
+                        <button class="songs-list-plus-icon"> <i class="fa-sharp fa-regular fa-plus"></i> </button>
+                    </div>
+
+                </div>
+
+             </div>
+
+             <div class="artist-songs-list">
+                <div class="song-list-collection">
+                    <div class="num-img-text">
+                    <div class="num-before-img">04</div>
+                    <div>
+                    <img class="music-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2Faf4ac59ba9e3e8b0fe70d7c1156ff8f2.1000x1000x1.jpg">
+                    <img class="music-img-song-list background-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2Faf4ac59ba9e3e8b0fe70d7c1156ff8f2.1000x1000x1.jpg">
+                    </div>
+
+                    <div class="song-list-artist-band-name">
+                        <div class="song-list-song-name">No. 1 Party Anthem</div>
+
+                        <div class="band-name-in-songs-list">Arctic Monkeys</div>
+                    </div>
+                    </div>
+                    <div class="plus-heart-icon">
+                        <button class="songs-list-heart-icon"> <i
+                                class="fa-sharp fa-regular fa-heart like-heart-icon"></i> </button>
+                        <button class="songs-list-plus-icon"> <i class="fa-sharp fa-regular fa-plus"></i> </button>
+                    </div>
+
+                </div>
+
+             </div>
+
+               <div class="artist-songs-list">
+                <div class="song-list-collection">
+                    <div class="num-img-text">
+                    <div class="num-before-img">05</div>
+                    <div>
+                    <img class="music-img-song-list"
+                        src="https://t2.genius.com/unsafe/268x268/https%3A%2F%2Fimages.genius.com%2F6318a87a42a5987190930c42936e96b2.1000x1000x1.jpg">
+                    <img class="music-img-song-list background-img-song-list"
+                        src="https://t2.genius.com/unsafe/268x268/https%3A%2F%2Fimages.genius.com%2F6318a87a42a5987190930c42936e96b2.1000x1000x1.jpg">
+                    </div>
+
+                    <div class="song-list-artist-band-name">
+                        <div class="song-list-song-name">505</div>
+
+                        <div class="band-name-in-songs-list">Arctic Monkeys</div>
+                    </div>
+                    </div>
+                    <div class="plus-heart-icon">
+                        <button class="songs-list-heart-icon"> <i
+                                class="fa-sharp fa-regular fa-heart like-heart-icon"></i> </button>
+                        <button class="songs-list-plus-icon"> <i class="fa-sharp fa-regular fa-plus"></i> </button>
+                    </div>
+
+                </div>
+
+             </div>
+
+             <div class="artist-songs-list">
+                <div class="song-list-collection">
+                    <div class="num-img-text">
+                    <div class="num-before-img">06</div>
+                    <div>
+                    <img class="music-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2Faf4ac59ba9e3e8b0fe70d7c1156ff8f2.1000x1000x1.jpg">
+                    <img class="music-img-song-list background-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2Faf4ac59ba9e3e8b0fe70d7c1156ff8f2.1000x1000x1.jpg">
+                    </div>
+
+                    <div class="song-list-artist-band-name">
+                        <div class="song-list-song-name">I Wanna Be Yours</div>
+
+                        <div class="band-name-in-songs-list">Arctic Monkeys</div>
+                    </div>
+                    </div>
+                    <div class="plus-heart-icon">
+                        <button class="songs-list-heart-icon"> <i
+                                class="fa-sharp fa-regular fa-heart like-heart-icon"></i> </button>
+                        <button class="songs-list-plus-icon"> <i class="fa-sharp fa-regular fa-plus"></i> </button>
+                    </div>
+
+                </div>
+
+             </div>
+
+             <div class="artist-songs-list">
+                <div class="song-list-collection">
+                    <div class="num-img-text">
+                    <div class="num-before-img">07</div>
+                    <div>
+                    <img class="music-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2Faf4ac59ba9e3e8b0fe70d7c1156ff8f2.1000x1000x1.jpg">
+                    <img class="music-img-song-list background-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2Faf4ac59ba9e3e8b0fe70d7c1156ff8f2.1000x1000x1.jpg">
+                    </div>
+
+                    <div class="song-list-artist-band-name">
+                        <div class="song-list-song-name">Arabella</div>
+
+                        <div class="band-name-in-songs-list">Arctic Monkeys</div>
+                    </div>
+                    </div>
+                    <div class="plus-heart-icon">
+                        <button class="songs-list-heart-icon"> <i
+                                class="fa-sharp fa-regular fa-heart like-heart-icon"></i> </button>
+                        <button class="songs-list-plus-icon"> <i class="fa-sharp fa-regular fa-plus"></i> </button>
+                    </div>
+
+                </div>
+
+             </div>
+
+             <div class="artist-songs-list">
+                <div class="song-list-collection">
+                    <div class="num-img-text">
+                    <div class="num-before-img">08</div>
+                    <div>
+                    <img class="music-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2Faf4ac59ba9e3e8b0fe70d7c1156ff8f2.1000x1000x1.jpg">
+                    <img class="music-img-song-list background-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2Faf4ac59ba9e3e8b0fe70d7c1156ff8f2.1000x1000x1.jpg">
+                    </div>
+
+                    <div class="song-list-artist-band-name">
+                        <div class="song-list-song-name">Knee Socks</div>
+
+                        <div class="band-name-in-songs-list">Arctic Monkeys</div>
+                    </div>
+                    </div>
+                    <div class="plus-heart-icon">
+                        <button class="songs-list-heart-icon"> <i
+                                class="fa-sharp fa-regular fa-heart like-heart-icon"></i> </button>
+                        <button class="songs-list-plus-icon"> <i class="fa-sharp fa-regular fa-plus"></i> </button>
+                    </div>
+
+                </div>
+
+             </div>
+
+
+             <div class="artist-songs-list">
+                <div class="song-list-collection">
+                    <div class="num-img-text">
+                    <div class="num-before-img">09</div>
+                    <div>
+                    <img class="music-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2F63ad5fc3b385613166b3db94d19d52bb.1000x1000x1.jpg">
+                    <img class="music-img-song-list background-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2F63ad5fc3b385613166b3db94d19d52bb.1000x1000x1.jpg">
+                    </div>
+
+                    <div class="song-list-artist-band-name">
+                        <div class="song-list-song-name">Crying Lightning</div>
+
+                        <div class="band-name-in-songs-list">Arctic Monkeys</div>
+                    </div>
+                    </div>
+                    <div class="plus-heart-icon">
+                        <button class="songs-list-heart-icon"> <i
+                                class="fa-sharp fa-regular fa-heart like-heart-icon"></i> </button>
+                        <button class="songs-list-plus-icon"> <i class="fa-sharp fa-regular fa-plus"></i> </button>
+                    </div>
+
+                </div>
+
+             </div>
+
+               <div class="artist-songs-list">
+                <div class="song-list-collection">
+                    <div class="num-img-text">
+                    <div class="num-before-img">10</div>
+                    <div>
+                    <img class="music-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2F35f6ea08f5d546d7162769f09f5bafc3.600x600x1.jpg">
+                    <img class="music-img-song-list background-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2F35f6ea08f5d546d7162769f09f5bafc3.600x600x1.jpg">
+                    </div>
+
+                    <div class="song-list-artist-band-name">
+                        <div class="song-list-song-name">Brainstrom</div>
+
+                        <div class="band-name-in-songs-list">Arctic Monkeys</div>
+                    </div>
+                    </div>
+                    <div class="plus-heart-icon">
+                        <button class="songs-list-heart-icon"> <i
+                                class="fa-sharp fa-regular fa-heart like-heart-icon"></i> </button>
+                        <button class="songs-list-plus-icon"> <i class="fa-sharp fa-regular fa-plus"></i> </button>
+                    </div>
+
+                </div>
+
+             </div>
+
+             <div class="artist-songs-list">
+                <div class="song-list-collection">
+                    <div class="num-img-text">
+                    <div class="num-before-img">11</div>
+                    <div>
+                    <img class="music-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2Fe9500ed32b942aaa222cf48c26f3500f.600x600x1.jpg">
+                    <img class="music-img-song-list background-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2Fe9500ed32b942aaa222cf48c26f3500f.600x600x1.jpg">
+                    </div>
+
+                    <div class="song-list-artist-band-name">
+                        <div class="song-list-song-name">Teddy Picker</div>
+
+                        <div class="band-name-in-songs-list">Arctic Monkeys</div>
+                    </div>
+                    </div>
+                    <div class="plus-heart-icon">
+                        <button class="songs-list-heart-icon"> <i
+                                class="fa-sharp fa-regular fa-heart like-heart-icon"></i> </button>
+                        <button class="songs-list-plus-icon"> <i class="fa-sharp fa-regular fa-plus"></i> </button>
+                    </div>
+
+                </div>
+
+             </div>
+
+             <div class="artist-songs-list">
+                <div class="song-list-collection">
+                    <div class="num-img-text">
+                    <div class="num-before-img">12</div>
+                    <div>
+                    <img class="music-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2Fe6fbbb80a1ddfa1b599eb35a343b0201.1000x1000x1.jpg">
+                    <img class="music-img-song-list background-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2Fe6fbbb80a1ddfa1b599eb35a343b0201.1000x1000x1.jpg">
+                    </div>
+
+                    <div class="song-list-artist-band-name">
+                        <div class="song-list-song-name">One For The Road</div>
+
+                        <div class="band-name-in-songs-list">Arctic Monkeys</div>
+                    </div>
+                    </div>
+                    <div class="plus-heart-icon">
+                        <button class="songs-list-heart-icon"> <i
+                                class="fa-sharp fa-regular fa-heart like-heart-icon"></i> </button>
+                        <button class="songs-list-plus-icon"> <i class="fa-sharp fa-regular fa-plus"></i> </button>
+                    </div>
+
+                </div>
+
+             </div>
+
+             <div class="artist-songs-list">
+                <div class="song-list-collection">
+                    <div class="num-img-text">
+                    <div class="num-before-img">13</div>
+                    <div>
+                    <img class="music-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2F61e412d4ff6c066a4903f0baecd13347.1000x1000x1.png">
+                    <img class="music-img-song-list background-img-song-list"
+                        src="https://t2.genius.com/unsafe/288x288/https%3A%2F%2Fimages.genius.com%2F61e412d4ff6c066a4903f0baecd13347.1000x1000x1.png">
+                    </div>
+
+                    <div class="song-list-artist-band-name">
+                        <div class="song-list-song-name">One Point Perspective</div>
+
+                        <div class="band-name-in-songs-list">Arctic Monkeys</div>
+                    </div>
+                    </div>
+                    <div class="plus-heart-icon">
+                        <button class="songs-list-heart-icon"> <i
+                                class="fa-sharp fa-regular fa-heart like-heart-icon"></i> </button>
+                        <button class="songs-list-plus-icon"> <i class="fa-sharp fa-regular fa-plus"></i> </button>
+                    </div>
+
+                </div>
+
+             </div>
+
+
+
+            </div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+
+        <!-----------------------------------------------------aside-section--------------------------------------------------->
+        <aside id="aside-section">
+            <!--------------------------------------------- similar artists------------------------------------------------ -->
+            <div class="complete-similar-section">
+                <div class="aside-colour-setting">
+                    <div id="similar-artists"> Similar Artists</div>
+                    <div class="view-all"> View All</div>
+                </div>
+              <div class="similar-artist-container">
+                <div class="image-imagine-band">
+                    <div class="img-padding">
+                        
+                        <div class="sim-art-icn-img-text">
+                            <div class="sim-art-icn-img">
+                                <i class="fa-solid fa-play s-a-play-icon-edit"></i>
+                            <img class="music-img"
+                                src="https://imgix.ranker.com/user_node_img/3167/63322750/original/63322750-photo-u1097973683?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                            <img class="music-img background-img"
+                                src="https://imgix.ranker.com/user_node_img/3167/63322750/original/63322750-photo-u1097973683?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                            </div>
+                            <div class="imagine-band">
+                                <div class="imagine">Imagine Dragons</div>
+                                <div class="band"> Pop Band</div>
+                            </div>
+                        </div>
+                        <div class="dots-duration">
+                            <i class="fa-solid fa-ellipsis three-dot-icon"></i>
+                            <div class="song-duration"> 4:44</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-imagine-band">
+                    <div class="img-padding">
+                        
+                        <div class="sim-art-icn-img-text">
+                            <div class="sim-art-icn-img">
+                                <i class="fa-solid fa-play s-a-play-icon-edit"></i>
+                            <img class="music-img"
+                                src="https://imgix.ranker.com/user_node_img/38/754403/original/754403-photo-u90643545?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                            <img class="music-img background-img"
+                                src="https://imgix.ranker.com/user_node_img/38/754403/original/754403-photo-u90643545?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                            </div>
+                            <div class="imagine-band">
+                                <div class="imagine">Coldplay</div>
+                                <div class="band"> Pop Band</div>
+                            </div>
+                        </div>
+                        <div class="dots-duration">
+                            <i class="fa-solid fa-ellipsis three-dot-icon"></i>
+                            <div class="song-duration"> 4:44</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-imagine-band">
+                    <div class="img-padding">
+                        
+                        <div class="sim-art-icn-img-text">
+                            <div class="sim-art-icn-img">
+                                <i class="fa-solid fa-play s-a-play-icon-edit"></i>
+                            <img class="music-img"
+                                src="https://imgix.ranker.com/user_node_img/111/2201726/original/the-killers-photo-u6?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                            <img class="music-img background-img"
+                                src="https://imgix.ranker.com/user_node_img/111/2201726/original/the-killers-photo-u6?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                            </div>
+                            <div class="imagine-band">
+                                <div class="imagine">The Killers</div>
+                                <div class="band"> Pop Band</div>
+                            </div>
+                        </div>
+                        <div class="dots-duration">
+                            <i class="fa-solid fa-ellipsis three-dot-icon"></i>
+                            <div class="song-duration"> 4:44</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-imagine-band">
+                    <div class="img-padding">
+                        
+                        <div class="sim-art-icn-img-text">
+                            <div class="sim-art-icn-img">
+                                <i class="fa-solid fa-play s-a-play-icon-edit"></i>
+                            <img class="music-img"
+                                src="https://imgix.ranker.com/user_node_img/87/1721059/original/1721059-photo-u-1379923865?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                            <img class="music-img background-img"
+                                src="https://imgix.ranker.com/user_node_img/87/1721059/original/1721059-photo-u-1379923865?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                            </div>
+                            <div class="imagine-band">
+                                <div class="imagine">OneRepublic</div>
+                                <div class="band"> Pop Band</div>
+                            </div>
+                        </div>
+                        <div class="dots-duration">
+                            <i class="fa-solid fa-ellipsis three-dot-icon"></i>
+                            <div class="song-duration"> 4:44</div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+                
+
+
+
+                
+
+
+            <!--------------------------------------------- Recently Played------------------------------------------------ -->
+            <div class="complete-recently-played-section">
+                <div class="aside-colour-setting-recent">
+                    <div id="similar-artists-recent"> Recently Played</div>
+                    <div class="view-all"> View All</div>
+                </div>
+
+              <div class="recent-author-container">
+                <div class="image-imagine-band">
+                    <div class="img-padding">
+                        <div class="sim-art-icn-img-text">
+                            <div class="num-before-r-p">01</div>
+                            <div class="sim-art-icn-img">
+                                <i class="fa-solid fa-play s-a-play-icon-edit"></i>
+                            <img class="music-img"
+                                src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_auto,w_1400/fl_lossy,pg_1/w9kk4pvcqrmswcomuhsf/closer-chainsmokers?fimg-ssr">
+                            <img class="music-img background-img-r-p"
+                                src="https://imgix.ranker.com/user_node_img/87/1721059/original/1721059-photo-u-1379923865?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                            </div>
+                            <div class="imagine-band">
+                                <div class="imagine">Closer</div>
+                                <div class="band"> ChainSmokers</div>
+                            </div>
+
+                            
+                        </div>
+                        <div >
+                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="image-imagine-band">
+                    <div class="img-padding">
+                        <div class="sim-art-icn-img-text">
+                            <div class="num-before-r-p">02</div>
+                            <div class="sim-art-icn-img">
+                                <i class="fa-solid fa-play s-a-play-icon-edit"></i>
+                            <img class="music-img"
+                                src="https://i.insider.com/61eb08b12b43ff00185e12cb?width=1000&format=jpeg&auto=webp">
+                            <img class="music-img background-img-r-p"
+                                src="https://i.insider.com/61eb08b12b43ff00185e12cb?width=1000&format=jpeg&auto=webp">
+                            </div>
+                            <div class="imagine-band">
+                                <div class="imagine">Lean On</div>
+                                <div class="band"> DJ Snake</div>
+                            </div>
+
+                            
+                        </div>
+                        <div >
+                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="image-imagine-band">
+                    <div class="img-padding">
+                        <div class="sim-art-icn-img-text">
+                            <div class="num-before-r-p">03</div>
+                            <div class="sim-art-icn-img">
+                                <i class="fa-solid fa-play s-a-play-icon-edit"></i>
+                            <img class="music-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/b/bb/Imagine_Dragons_Bones_cover.jpg">
+                            <img class="music-img background-img-r-p"
+                                src="https://upload.wikimedia.org/wikipedia/en/b/bb/Imagine_Dragons_Bones_cover.jpg">
+                            </div>
+                            <div class="imagine-band">
+                                <div class="imagine">Bones</div>
+                                <div class="band"> Imagine Dragons</div>
+                            </div>
+                        </div>
+                        <div >
+                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="image-imagine-band">
+                    <div class="img-padding">
+                        <div class="sim-art-icn-img-text">
+                            <div class="num-before-r-p">04</div>
+                            <div class="sim-art-icn-img">
+                                <i class="fa-solid fa-play s-a-play-icon-edit"></i>
+                            <img class="music-img"
+                                src="https://c.saavncdn.com/046/Believer-English-2017-20170803185842-500x500.jpg">
+                            <img class="music-img background-img-r-p"
+                                src="https://c.saavncdn.com/046/Believer-English-2017-20170803185842-500x500.jpg">
+                            </div>
+                            <div class="imagine-band">
+                                <div class="imagine">Believer</div>
+                                <div class="band">Imagine Dragons</div>
+                            </div>
+
+                           
+                        </div>
+                        <div >
+                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <div class="image-imagine-band">
+                    <div class="img-padding">
+                        <div class="sim-art-icn-img-text">
+                            <div class="num-before-r-p">05</div>
+                            <div class="sim-art-icn-img">
+                                <i class="fa-solid fa-play s-a-play-icon-edit"></i>
+                            <img class="music-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/a/a5/DJSnakeLetMeLoveYou.jpg">
+                            <img class="music-img background-img-r-p"
+                                src="https://upload.wikimedia.org/wikipedia/en/a/a5/DJSnakeLetMeLoveYou.jpg">
+                            </div>
+                            <div class="imagine-band">
+                                <div class="imagine">Let Me Love You</div>
+                                <div class="band">  DJ Snake</div>
+                            </div>
+                            
+                        </div>
+                        <div >
+                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="image-imagine-band">
+                    <div class="img-padding">
+                        <div class="sim-art-icn-img-text">
+                            <div class="num-before-r-p">06</div>
+                            <div class="sim-art-icn-img">
+                                <i class="fa-solid fa-play s-a-play-icon-edit"></i>
+                            <img class="music-img"
+                                src="https://www.soundarts.gr/wp-content/uploads/2017/07/imagine-dragons-rise-up.jpg">
+                            <img class="music-img background-img-r-p"
+                                src="https://www.soundarts.gr/wp-content/uploads/2017/07/imagine-dragons-rise-up.jpg">
+                            </div>
+                            <div class="imagine-band">
+                                <div class="imagine">Rise Up</div>
+                                <div class="band"> Imagine Dragons</div>
+                            </div>
+                            
+                        </div>
+                        <div >
+                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="image-imagine-band">
+                    <div class="img-padding">
+                        <div class="sim-art-icn-img-text">
+                            <div class="num-before-r-p">07</div>
+                            <div class="sim-art-icn-img">
+                                <i class="fa-solid fa-play s-a-play-icon-edit"></i>
+                            <img class="music-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e1/Worth_it_single_cover.png">
+                            <img class="music-img background-img-r-p"
+                                src="https://imgix.ranker.com/user_node_img/87/1721059/original/1721059-photo-u-1379923865?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                            </div>
+                            <div class="imagine-band">
+                                <div class="imagine">Worth It</div>
+                                <div class="band">  Fifth Harmony</div>
+                            </div>
+                            
+                        </div>
+                        <div >
+                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="image-imagine-band">
+                    <div class="img-padding">
+                        <div class="sim-art-icn-img-text">
+                            <div class="num-before-r-p">08</div>
+                            <div class="sim-art-icn-img">
+                                <i class="fa-solid fa-play s-a-play-icon-edit"></i>
+                            <img class="music-img"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e8/Diamonds_-_Rihanna.png">
+                            <img class="music-img background-img-r-p"
+                                src="https://upload.wikimedia.org/wikipedia/en/e/e8/Diamonds_-_Rihanna.png">
+                            </div>
+                            <div class="imagine-band">
+                                <div class="imagine">Diamonds</div>
+                                <div class="band"> Rihanna</div>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="music-player-elements">
+        <div class="img-text-icons">
+            <div>
+                <img class="media-player-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9As9XjlzYIok7NgiRiutxDDAUqlkjzezP9mPLa3rpcA&usqp=CAU&ec=48600112">
+            </div> 
+            <div class="media-text-author">
+                <div class="scrolling-text">
+                    <p>This text will scroll horizontally</p>
+                </div>
+                <div class="media-author-name">
+                    Alan Walker
+                </div>
+            </div>
+            <div class="media-ban-heart">
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ban"></i>
+                </div>
+            </div>
+      </div>
+
+        <div class="middle-icons-bar">
+            <div class="all-mid-icons">
+                <div class="media-list-icon"> <i class="fa-solid fa-shuffle "></i> </div>
+                <div> <i class="fa-solid fa-backward-step"></i></div>
+                <div> <i class="fa-regular fa-circle-pause pause-play-button"></i> </div>
+                <div><i class="fa-solid fa-forward-step"></i> </div>
+                <div class="media-list-icon"> <i class="fa-solid fa-repeat "></i> </div>
+            </div>
+
+            <div class="progress-bar-main media-list-icon"> 
+                <div class="media-time"> 2:00</div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="media-time"> 5:00</div>
+            </div>
+
+        </div>
+
+        <div class="list-volume-expand-icon media-list-icon"> 
+            <div> <i class="ri-play-list-2-line "></i></div>
+            <div> <i class="fa-solid fa-sliders "></i></div>
+            <div> <i class="fa-solid fa-volume-high "></i></div>
+            <div class="volume-bar ">
+                <div class="volume"></div>
+                <div class="volume-handle"></div>
+            </div>
+            <div> <i class="fa-solid fa-up-right-and-down-left-from-center "></i></div>
+           
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

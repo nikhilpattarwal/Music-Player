@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="musicplayerweb.css" />
+    <!-- <link rel="stylesheet" href="practice.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/07e9793f39.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="complete-nav-bar">
+        <div class="nav-bar-proper">
+            <div id="icon-text">
+                <div class="m-icon-ni-studio">
+                    <span><i class="fa-solid fa-music"></i></span>
+                    <div id="ninja-studio"><span id="ninja"> Ninja </span> <br> <span id="studio">Studio</span></div>
+                </div>
+                <div id="favourites">
+                    <p> Favourites</p>
+                </div>
+            </div>
+            <div class="s-bar-bell-profile">
+                <div>
+                    <form id="sb-b-si">
+                        <button id="search" type="submit"> <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <input id="search-box" type="text" placeholder="Search...">
+                    </form>
+                </div>
+
+                <div><i id="mic-icon" class="fa-solid fa-microphone"></i></div>
+                <div> <i id="bell-icon" class="fa-solid fa-bell"></i></div>
+                <!-- <div><i id="profile-icon" class="ri-account-circle-fill"></i></div>  -->
+                <div class="open-queue">Queue <i class="fa-solid fa-angle-down angle-down-arrow"></i>
+                    <aside class="aside-section-hover">
+                        <div class="complete-recently-played-section">
+                            <div class="aside-colour-setting-recent-hover">
+                                <span id="similar-artists-recent"> Queue </span>
+                                <span class="view-all">
+                                    <div class="down-icon-q">Queue <i
+                                            class="fa-solid fa-angle-down angle-down-arrow"></i></div>
+
+                                    <div class="pop-up-click-hov">
+                                        <div class="p-f-s">
+                                            <i class="ri-play-list-line"></i>
+
+                                            Playlists
+                                        </div>
+                                        <hr />
+                                        <div class="p-f-s">
+                                            <i class="fa-solid fa-heart"></i>
+                                            Favourite Songs
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+
+
+                            <div>
+                                <div class="image-imagine-band">
+                                    <div class="img-padding">
+
+                                        <div class="num-before-img">01</div>
+                                        <div class="queue-images">
+                                            <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                            <img class="music-img"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIQiVwtmlU8sfKJyGRLe1SLpw1Q3DPEKpOGCSQZiNDQ&usqp=CAU&ec=48600112">
+                                            <img class="music-img background-img-recent"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIQiVwtmlU8sfKJyGRLe1SLpw1Q3DPEKpOGCSQZiNDQ&usqp=CAU&ec=48600112">
+                                        </div>
+                                        <span class="imagine-band-recent">
+                                            <div class="imagine">Spectre</div>
+                                            <p class="band">Alan Walker</p>
+                                        </span>
+                                        <div class="dots-duration">
+                                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="image-imagine-band">
+                                    <div class="img-padding">
+                                        <div class="num-before-img">02</div>
+                                        <div class="queue-images">
+                                            <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                            <img class="music-img"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3xQgT44XnyFnYvsyK09KKVJP_zmDdsRdDxbQ8Lv_o3w&usqp=CAU&ec=48600112"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3xQgT44XnyFnYvsyK09KKVJP_zmDdsRdDxbQ8Lv_o3w&usqp=CAU&ec=48600112">
+                                        </div>
+                                        <span class="imagine-band-recent">
+                                            <div class="imagine">Make MY Love Go</div>
+
+                                            <p class="band">Jay Sean</p>
+                                        </span>
+                                        <div class="dots-duration">
+                                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="image-imagine-band">
+                                    <div class="img-padding">
+                                        <div class="num-before-img">03</div>
+                                        <div class="queue-images">
+                                            <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                            <img class="music-img"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzyaMCiGtCgWozCizVUq7PIVozLWqOPepkHxwqi5bEmQ&usqp=CAU&ec=48600112"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzyaMCiGtCgWozCizVUq7PIVozLWqOPepkHxwqi5bEmQ&usqp=CAU&ec=48600112">
+                                        </div>
+                                        <span class="imagine-band-recent">
+                                            <div class="imagine">Chasing Dreams</div>
+
+                                            <p class="band">Bradley Walsh</p>
+                                        </span>
+                                        <div class="dots-duration">
+                                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="image-imagine-band">
+                                    <div class="img-padding">
+                                        <div class="num-before-img">04</div>
+                                        <div class="queue-images">
+                                            <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                            <img class="music-img"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPUJMGX5IPCpGnPECRt6JUCVfTKvhMFNXEyjqzwZrdKA&usqp=CAU&ec=48600112"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPUJMGX5IPCpGnPECRt6JUCVfTKvhMFNXEyjqzwZrdKA&usqp=CAU&ec=48600112">
+                                        </div>
+                                        <span class="imagine-band-recent">
+                                            <div class="imagine">Don't Let Me Down</div>
+
+                                            <p class="band"> The Chainsmokers</p>
+                                        </span>
+                                        <div class="dots-duration">
+                                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="image-imagine-band">
+                                    <div class="img-padding">
+                                        <div class="num-before-img">05</div>
+                                        <div class="queue-images">
+                                            <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                            <img class="music-img"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc074PA5YJZJdbV7CI02gaX5HlYET8TxNmSKDjNhQ8dQ&usqp=CAU&ec=48600112"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc074PA5YJZJdbV7CI02gaX5HlYET8TxNmSKDjNhQ8dQ&usqp=CAU&ec=48600112">
+                                        </div>
+                                        <span class="imagine-band-recent">
+                                            <div class="imagine">Work From Home</div>
+
+                                            <p class="band"> Fifth Harmony</p>
+                                        </span>
+                                        <div class="dots-duration">
+                                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="image-imagine-band">
+                                    <div class="img-padding">
+                                        <div class="num-before-img">06</div>
+                                        <div class="queue-images">
+                                            <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                            <img class="music-img"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq8NQveAgqX6Zh7muzRVNypnpWi-tJsZaWWr2mjJ0EbQ&usqp=CAU&ec=48600112">
+                                            <img class="music-img background-img-recent"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq8NQveAgqX6Zh7muzRVNypnpWi-tJsZaWWr2mjJ0EbQ&usqp=CAU&ec=48600112">
+                                        </div>
+                                        <span class="imagine-band-recent">
+                                            <div class="imagine">Used To This</div>
+
+                                            <p class="band"> Future</p>
+                                        </span>
+                                        <div class="dots-duration">
+                                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="image-imagine-band">
+                                    <div class="img-padding">
+                                        <div class="num-before-img">07</div>
+                                        <div class="queue-images">
+                                            <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                            <img class="music-img"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbzOGoC7002oGOrpTVWyVyTpt32SYzdLZRwvpZQEc29A&usqp=CAU&ec=48600112">
+                                            <img class="music-img background-img-recent"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbzOGoC7002oGOrpTVWyVyTpt32SYzdLZRwvpZQEc29A&usqp=CAU&ec=48600112">
+                                        </div>
+                                        <span class="imagine-band-recent">
+                                            <div class="imagine">Thinking About You</div>
+
+                                            <p class="band"> Hardwell</p>
+                                        </span>
+                                        <div class="dots-duration">
+                                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="image-imagine-band">
+                                    <div class="img-padding">
+                                        <div class="num-before-img">08</div>
+                                        <div class="queue-images">
+                                            <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                            <img class="music-img"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTThYB-lzo5Z4xRioW9RAcZaxGmZpof_f7pjTk2As71Cg&usqp=CAU&ec=48600112">
+                                            <img class="music-img background-img-recent"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTThYB-lzo5Z4xRioW9RAcZaxGmZpof_f7pjTk2As71Cg&usqp=CAU&ec=48600112">
+                                        </div>
+                                        <span class="imagine-band-recent">
+                                            <div class="imagine">See You Again</div>
+
+                                            <p class="band"> Wiz Khalifa</p>
+                                        </span>
+                                        <div class="dots-duration">
+                                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="image-imagine-band">
+                                    <div class="img-padding">
+
+                                        <div class="num-before-img">09</div>
+                                        <div class="queue-images">
+                                            <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                            <img class="music-img"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvJS68xUCo05430G5yXVqMh9TvjONX8hAhJt9z8m0UIA&usqp=CAU&ec=48600112">
+                                            <img class="music-img background-img-recent"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvJS68xUCo05430G5yXVqMh9TvjONX8hAhJt9z8m0UIA&usqp=CAU&ec=48600112">
+                                        </div>
+                                        <span class="imagine-band-recent">
+                                            <div class="imagine">We Don't Talk Anymore</div>
+                                            <p class="band">Charlie Puth</p>
+                                        </span>
+                                        <div class="dots-duration">
+                                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="image-imagine-band">
+                                    <div class="img-padding">
+
+                                        <div class="num-before-img">10</div>
+                                        <div class="queue-images">
+                                            <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                            <img class="music-img"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmif6hjN3QXEHXlFXqjHaR1k9VZEvcNiYzWgRRcNrYkA&usqp=CAU&ec=48600112">
+                                            <img class="music-img background-img-recent"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmif6hjN3QXEHXlFXqjHaR1k9VZEvcNiYzWgRRcNrYkA&usqp=CAU&ec=48600112">
+                                        </div>
+                                        <span class="imagine-band-recent">
+                                            <div class="imagine">I'm Not The Only One</div>
+                                            <p class="band">Sam Smith</p>
+                                        </span>
+                                        <div class="dots-duration">
+                                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="image-imagine-band">
+                                    <div class="img-padding">
+
+                                        <div class="num-before-img">11</div>
+                                        <div class="queue-images">
+                                            <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                            <img class="music-img"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqclfmmYIm2y-lLJoK9lHQOsqPgBLV6fhL2TiKAWaGPA&usqp=CAU&ec=48600112">
+                                            <img class="music-img background-img-recent"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqclfmmYIm2y-lLJoK9lHQOsqPgBLV6fhL2TiKAWaGPA&usqp=CAU&ec=48600112">
+                                        </div>
+                                        <span class="imagine-band-recent">
+                                            <div class="imagine">Heathens</div>
+                                            <p class="band">Twenty One</p>
+                                        </span>
+                                        <div class="dots-duration">
+                                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="image-imagine-band">
+                                    <div class="img-padding">
+
+                                        <div class="num-before-img">12</div>
+                                        <div class="queue-images">
+                                            <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                            <img class="music-img"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zkEa-Nya3z7VWJnbuWtoR4y-wkXEBieXDqpSLiegEA&usqp=CAU&ec=48600112">
+                                            <img class="music-img background-img-recent"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zkEa-Nya3z7VWJnbuWtoR4y-wkXEBieXDqpSLiegEA&usqp=CAU&ec=48600112">
+                                        </div>
+                                        <span class="imagine-band-recent">
+                                            <div class="imagine">Tik Tok</div>
+                                            <p class="band">Kesha</p>
+                                        </span>
+                                        <div class="dots-duration">
+                                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="image-imagine-band">
+                                    <div class="img-padding">
+
+                                        <div class="num-before-img">13</div>
+                                        <div class="queue-images">
+                                            <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                            <img class="music-img"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSWomIxNvjcHOgn-ciGjPhY1fnoxCzf55tEGwZJXvyA&usqp=CAU&ec=48600112">
+                                            <img class="music-img background-img-recent"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSWomIxNvjcHOgn-ciGjPhY1fnoxCzf55tEGwZJXvyA&usqp=CAU&ec=48600112">
+                                        </div>
+                                        <span class="imagine-band-recent">
+                                            <div class="imagine">Sure Thing</div>
+                                            <p class="band">Miguel</p>
+                                        </span>
+                                        <div class="dots-duration">
+                                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="image-imagine-band">
+                                    <div class="img-padding">
+
+                                        <div class="num-before-img">14</div>
+                                        <div class="queue-images">
+                                            <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                            <img class="music-img"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLU3cuz_MOr2EBndJV1p6CFzWp-9m78QA9mK_ragkZuQ&usqp=CAU&ec=48600112">
+                                            <img class="music-img background-img-recent"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLU3cuz_MOr2EBndJV1p6CFzWp-9m78QA9mK_ragkZuQ&usqp=CAU&ec=48600112">
+                                        </div>
+                                        <span class="imagine-band-recent">
+                                            <div class="imagine">Hey Baby</div>
+                                            <p class="band">Diplo</p>
+                                        </span>
+                                        <div class="dots-duration">
+                                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="image-imagine-band">
+                                    <div class="img-padding">
+
+                                        <div class="num-before-img">15</div>
+                                        <div class="queue-images">
+                                            <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                            <img class="music-img"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYXnEMJxuegzgs87k8-IGvbWropFxbAWGkP9ZzF3rIpA&usqp=CAU&ec=48600112">
+                                            <img class="music-img background-img-recent"
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYXnEMJxuegzgs87k8-IGvbWropFxbAWGkP9ZzF3rIpA&usqp=CAU&ec=48600112">
+                                        </div>
+                                        <span class="imagine-band-recent">
+                                            <div class="imagine">This One's For You</div>
+                                            <p class="band">David guetta</p>
+                                        </span>
+                                        <div class="dots-duration">
+                                            <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </aside>
+                </div>
+                <div><i id="profile-icon" class="fa-solid fa-id-card-clip"></i></div>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- --------------------------------------------------main---------------------------------------------------- -->
+    <div class="main-container">
+        <div class="main-artist">
+            <div class="artist-banner">
+                <img class="banner-images"
+                    src="https://a10.gaanacdn.com/gn_img/albums/qa4WEqqWP1/a4WEJvaMbP/size_l.webp">
+                <img class="banner-images" src="https://i.scdn.co/image/ab67616d00001e0293f3e0a16658b84ceb9c67d2">
+                <img class="banner-images"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwqT-S8edGSOAoQsfuJAFylCG4AzHta3sFiOTFuU3Rbw&usqp=CAU&ec=48600112">
+            </div>
+
+            <div class="latest-release">Latest Release</div>
+
+            <div class="main-latest-rel-song">
+                <div class="image-imagine-band-main">
+
+                    <div class="img-padding-main">
+                        <i class="fa-solid fa-play s-a-play-icon-edit-main"></i>
+                        <img class="music-img-main"
+                            src="https://imgix.ranker.com/user_node_img/3167/63322750/original/63322750-photo-u1097973683?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                        <img class="music-img-main background-img-recent-main"
+                            src="https://imgix.ranker.com/user_node_img/3167/63322750/original/63322750-photo-u1097973683?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                        <div class="imagine-band">
+                            <div class="imagine">Imagine Dragons</div>
+                            <p class="band"> Pop Band</p>
+                        </div>
+
+                        <div class="dots-duration-main">
+                            <div class="dots-heart-plus-icon">
+                                <i class="fa-regular fa-heart three-dot-icon disp-none"></i>
+                                <i class="fa-solid fa-plus three-dot-icon disp-none"></i>
+                                <i class="fa-solid fa-ellipsis three-dot-icon"></i>
+                                <div class="pop-up-click-hov-t-dots">
+                                    <div class="p-f-s"> <i class="ri-play-fill"></i> Play Now</div>
+                                    <hr />
+                                    <div class="p-f-s"> <i class="ri-menu-add-line"></i> Add To Queue</div>
+                                    <hr />
+                                    <div class="p-f-s"> <i class="ri-heart-add-fill"></i> Add To Favourite</div>
+                                    <hr />
+                                    <div class="p-f-s"> <i class="ri-information-fill"></i> Get Info</div>
+                                </div>
+                            
+                            </div>
+                            <p class="song-duration"> 4:44</p>
+                        </div>
+                    </div>
+
+                    <div class="img-padding-main">
+                        <i class="fa-solid fa-play s-a-play-icon-edit-main"></i>
+                        <img class="music-img-main"
+                            src="https://imgix.ranker.com/user_node_img/3167/63322750/original/63322750-photo-u1097973683?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                        <img class="music-img-main background-img-recent-main"
+                            src="https://imgix.ranker.com/user_node_img/3167/63322750/original/63322750-photo-u1097973683?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                        <div class="imagine-band">
+                            <div class="imagine">Imagine Dragons</div>
+                            <p class="band"> Pop Band</p>
+                        </div>
+
+                        <div class="dots-duration-main">
+                            <div class="dots-heart-plus-icon">
+                                <i class="fa-regular fa-heart three-dot-icon disp-none"></i>
+                                <i class="fa-solid fa-plus three-dot-icon disp-none"></i>
+                                <i class="fa-solid fa-ellipsis three-dot-icon"></i>
+                                <div class="pop-up-click-hov-t-dots">
+                                    <div class="p-f-s"> <i class="ri-play-fill"></i> Play Now</div>
+                                    <hr />
+                                    <div class="p-f-s"> <i class="ri-menu-add-line"></i> Add To Queue</div>
+                                    <hr />
+                                    <div class="p-f-s"> <i class="ri-heart-add-fill"></i> Add To Favourite</div>
+                                    <hr />
+                                    <div class="p-f-s"> <i class="ri-information-fill"></i> Get Info</div>
+                                </div>
+                              
+                            </div>
+                            <p class="song-duration"> 4:44</p>
+                        </div>
+                    </div>
+
+                    <div class="img-padding-main">
+                        <i class="fa-solid fa-play s-a-play-icon-edit-main"></i>
+                        <img class="music-img-main"
+                            src="https://imgix.ranker.com/user_node_img/3167/63322750/original/63322750-photo-u1097973683?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                        <img class="music-img-main background-img-recent-main"
+                            src="https://imgix.ranker.com/user_node_img/3167/63322750/original/63322750-photo-u1097973683?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                        <div class="imagine-band">
+                            <div class="imagine">Imagine Dragons</div>
+                            <p class="band"> Pop Band</p>
+                        </div>
+
+
+                        <div class="dots-duration-main">
+                            <div class="dots-heart-plus-icon">
+                                <i class="fa-regular fa-heart three-dot-icon disp-none"></i>
+                                <i class="fa-solid fa-plus three-dot-icon disp-none"></i>
+                                <i class="fa-solid fa-ellipsis three-dot-icon"></i>
+                                <div class="pop-up-click-hov-t-dots">
+                                    <div class="p-f-s"> <i class="ri-play-fill"></i> Play Now</div>
+                                    <hr />
+                                    <div class="p-f-s"> <i class="ri-menu-add-line"></i> Add To Queue</div>
+                                    <hr />
+                                    <div class="p-f-s"> <i class="ri-heart-add-fill"></i> Add To Favourite</div>
+                                    <hr />
+                                    <div class="p-f-s"> <i class="ri-information-fill"></i> Get Info</div>
+                                </div>
+                              
+                            </div>
+                            <p class="song-duration"> 4:44</p>
+                        </div>
+                    </div>
+
+                    <div class="img-padding-main">
+                        <i class="fa-solid fa-play s-a-play-icon-edit-main"></i>
+                        <img class="music-img-main"
+                            src="https://imgix.ranker.com/user_node_img/3167/63322750/original/63322750-photo-u1097973683?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                        <img class="music-img-main background-img-recent-main"
+                            src="https://imgix.ranker.com/user_node_img/3167/63322750/original/63322750-photo-u1097973683?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                        <div class="imagine-band">
+                            <div class="imagine">Imagine Dragons</div>
+                            <p class="band"> Pop Band</p>
+                        </div>
+
+                        <div class="dots-duration-main">
+                            <div class="dots-heart-plus-icon">
+                                <i class="fa-regular fa-heart three-dot-icon disp-none"></i>
+                                <i class="fa-solid fa-plus three-dot-icon disp-none"></i>
+                                <i class="fa-solid fa-ellipsis three-dot-icon"></i>
+                                <div class="pop-up-click-hov-t-dots">
+                                    <div class="p-f-s"> <i class="ri-play-fill"></i> Play Now</div>
+                                    <hr />
+                                    <div class="p-f-s"> <i class="ri-menu-add-line"></i> Add To Queue</div>
+                                    <hr />
+                                    <div class="p-f-s"> <i class="ri-heart-add-fill"></i> Add To Favourite</div>
+                                    <hr />
+                                    <div class="p-f-s"> <i class="ri-information-fill"></i> Get Info</div>
+                                </div>
+                                
+                            </div>
+                            <p class="song-duration"> 4:44</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!-- -------------------------------------------------popular artists---------------------------------------------------- -->
+            <div class="latest-release">Popular Artists</div>
+
+            <div class="popular-artists">
+
+                <div class="text-artist-image">
+                    <img class="popular-artist-image"
+                        src="https://assets.capitalfm.com/2022/43/ed-sheeran--1666953393-editorial-short-form-0.jpg">
+                    <div class="popular-artist-text">Ed Sheeran</div>
+                </div>
+
+                <div class="text-artist-image">
+                    <img class="popular-artist-image"
+                        src="https://assets.capitalfm.com/2022/43/the-weeknd--1666953393-editorial-short-form-0.jpg">
+                    <div class="popular-artist-text">The Weeknd</div>
+                </div>
+
+                <div class="text-artist-image">
+                    <a href="artistProfile.html" class="next-page-key">
+                        <img class="popular-artist-image"
+                            src="https://imgix.ranker.com/user_node_img/25/487034/original/487034-photo-u206107620?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&crop=faces&bg=fff&h=300&w=300">
+                        <div class="popular-artist-text">Arctic Monkeys</div>
+                    </a>
+                </div>
+
+                <div class="text-artist-image">
+                    <img class="popular-artist-image"
+                        src="https://assets.capitalfm.com/2022/42/rihanna-1666363760-editorial-short-form-0.jpeg">
+                    <div class="popular-artist-text">Rihhana</div>
+                </div>
+
+                <div class="text-artist-image">
+                    <img class="popular-artist-image"
+                        src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_auto,w_1400/fl_lossy,pg_1/w9kk4pvcqrmswcomuhsf/closer-chainsmokers?fimg-ssr">
+                    <div class="popular-artist-text">Cold Play</div>
+                </div>
+
+                <div class="text-artist-image">
+                    <img class="popular-artist-image"
+                        src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_auto,w_1400/fl_lossy,pg_1/w9kk4pvcqrmswcomuhsf/closer-chainsmokers?fimg-ssr">
+                    <div class="popular-artist-text">Cold Play</div>
+                </div>
+
+                <div class="text-artist-image">
+                    <img class="popular-artist-image"
+                        src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_auto,w_1400/fl_lossy,pg_1/w9kk4pvcqrmswcomuhsf/closer-chainsmokers?fimg-ssr">
+                    <div class="popular-artist-text">Cold Play</div>
+                </div>
+
+                <div class="text-artist-image">
+                    <img class="popular-artist-image"
+                        src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_auto,w_1400/fl_lossy,pg_1/w9kk4pvcqrmswcomuhsf/closer-chainsmokers?fimg-ssr">
+                    <div class="popular-artist-text">Cold Play</div>
+                </div>
+
+                <div class="text-artist-image">
+                    <img class="popular-artist-image"
+                        src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_auto,w_1400/fl_lossy,pg_1/w9kk4pvcqrmswcomuhsf/closer-chainsmokers?fimg-ssr">
+                    <div class="popular-artist-text">Cold Play</div>
+                </div>
+            </div>
+            <!-------------------------------------------------music-station-section-------------------------------------------  -->
+            <div class="music-station-div">
+                <svg class="music-play-list-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M2 18H12V20H2V18ZM2 11H16V13H2V11ZM2 4H22V6H2V4ZM19 15.1707V9H24V11H21V18C21 19.6569 19.6569 21 18 21C16.3431 21 15 19.6569 15 18C15 16.3431 16.3431 15 18 15C18.3506 15 18.6872 15.0602 19 15.1707Z">
+                    </path>
+                </svg>
+
+                <div class="radio-text">
+                    <img class="radio-music-b-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmnSNe9dceqvcWGN3w3W518faKz6fEt01COVtwyf_GrQ&usqp=CAU&ec=48600112">
+
+                    <i class="fa-solid fa-radio fa-fade "></i>
+                    <div class="music-station-text">Music Stations</div>
+                </div>
+
+
+                <div class="radio-station-img-text">
+                    <img class="radio-station-work-images"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQslF_5tnIj0BByvxqeqT77zrhf2PQRiEccCsLtQUszNA&usqp=CAU&ec=48600112">
+                    <div class="radio-station-work-text"> Love </div>
+                </div>
+
+                <div class="radio-station-img-text">
+                    <img class="radio-station-work-images"
+                        src="https://images.unsplash.com/photo-1518893883800-45cd0954574b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmludGFnZSUyMG11c2ljfGVufDB8fDB8fA%3D%3D&w=1000&q=80">
+                    <div class="radio-station-work-text"> Retro </div>
+                </div>
+
+                <div class="radio-station-img-text">
+                    <img class="radio-station-work-images"
+                        src="https://i.scdn.co/image/ab67616d00001e0207ed3dfac0464cd3789bb750">
+                    <div class="radio-station-work-text"> Chill </div>
+                </div>
+
+                <div class="radio-station-img-text">
+                    <img class="radio-station-work-images"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRndY33yR5vX7ITeGUp04DO0a5qU9SCk1TpVYG_S3YOnA&usqp=CAU&ec=48600112">
+                    <div class="radio-station-work-text"> Workout</div>
+                </div>
+
+                <div class="radio-station-img-text">
+                    <img class="radio-station-work-images"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCw1X2cZv5Zwrx0GbXDP76W6131BqzZaMSkzGh-bzC8w&usqp=CAU&ec=48600112">
+                    <div class="radio-station-work-text"> Rock </div>
+                </div>
+
+                <div class="radio-station-img-text">
+                    <img class="radio-station-work-images"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQptSfQN1zmlgzfM-H18aJncesBTjsgMy-f6-ntQQExvA&usqp=CAU&ec=48600112">
+                    <div class="radio-station-work-text"> Pop </div>
+                </div>
+
+                <div class="radio-station-img-text">
+                    <img class="radio-station-work-images"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQptSfQN1zmlgzfM-H18aJncesBTjsgMy-f6-ntQQExvA&usqp=CAU&ec=48600112">
+                    <div class="radio-station-work-text"> Pop </div>
+                </div>
+
+                <div class="radio-station-img-text">
+                    <img class="radio-station-work-images"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQptSfQN1zmlgzfM-H18aJncesBTjsgMy-f6-ntQQExvA&usqp=CAU&ec=48600112">
+                    <div class="radio-station-work-text"> Pop </div>
+                </div>
+
+                <div class="radio-station-img-text">
+                    <img class="radio-station-work-images"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQptSfQN1zmlgzfM-H18aJncesBTjsgMy-f6-ntQQExvA&usqp=CAU&ec=48600112">
+                    <div class="radio-station-work-text"> Pop </div>
+                </div>
+            </div>
+            <!-- -----------------------------------------------------Music Variety------------------------- -->
+            <div class="music-variety">
+                <div class="par-elec-rt">
+                    <img class="party-img"
+                        src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=600">
+                    <svg class="playlist-2-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M22 18V20H2V18H22ZM2 3.5L10 8.5L2 13.5V3.5ZM22 11V13H12V11H22ZM4 7.1085V9.8915L6.22641 8.5L4 7.1085ZM22 4V6H12V4H22Z">
+                        </path>
+                    </svg>
+                    <div class="par-elec-rt-text"> Party</div>
+                </div>
+
+                <div class="par-elec-rt">
+                    <img class="party-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG9Hhya5DBo50w-1Y_4NMHeGnX-i2yPhcW3WAl8IslPw&usqp=CAU&ec=48600112">
+                    <svg class="playlist-2-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M22 18V20H2V18H22ZM2 3.5L10 8.5L2 13.5V3.5ZM22 11V13H12V11H22ZM4 7.1085V9.8915L6.22641 8.5L4 7.1085ZM22 4V6H12V4H22Z">
+                        </path>
+                    </svg>
+                    <div class="par-elec-rt-text"> Electronic</div>
+                </div>
+
+                <div class="par-elec-rt">
+                    <img class="party-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3jl7ddPuIYni-GxAsVyUbZ4kN8XBFjlLEz51IFhwwJg&usqp=CAU&ec=48600112">
+                    <svg class="playlist-2-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M22 18V20H2V18H22ZM2 3.5L10 8.5L2 13.5V3.5ZM22 11V13H12V11H22ZM4 7.1085V9.8915L6.22641 8.5L4 7.1085ZM22 4V6H12V4H22Z">
+                        </path>
+                    </svg>
+                    <div class="par-elec-rt-text"> Road Trip</div>
+                </div>
+
+            </div>
+            <!-- --------------------------------------------latest-english-songs---------------------------------------------- -->
+            <div class="latest-release">Latest English Songs</div>
+
+            <div class="popular-artists">
+
+                <div class="text-latest-eng-songs">
+                    <img class="english-song-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvX5X92kEx5AtrFRew5UG5zUlIuRPeniMILNVyJO7qww&usqp=CAU&ec=48600112">
+                    <div class="popular-artist-text">
+                        <div>Eyes Closed</div>
+                        <div class="latest-song-date"> March 24, 2023</div>
+                    </div>
+                </div>
+
+                <div class="text-latest-eng-songs">
+                    <img class="english-song-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDkLdPpEroVWdbe9HWZIMY4Py8i6rWwjqUVHfB8cnIQ&usqp=CAU&ec=48600112">
+                    <div class="popular-artist-text">
+                        <div>The Courthouse</div>
+                        <div class="latest-song-date"> April 14, 2023</div>
+                    </div>
+                </div>
+
+                <div class="text-latest-eng-songs">
+                    <img class="english-song-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6edI27xW50JU_3iyTV7801PTFHjcBNAxVhBjaVueMKA&usqp=CAU&ec=48600112">
+                    <div class="popular-artist-text">
+                        <div>VOID</div>
+                        <div class="latest-song-date"> March 29, 2023</div>
+                    </div>
+                </div>
+
+                <div class="text-latest-eng-songs">
+                    <img class="english-song-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0j-StZZG8MxUmOZ3v_Rb0TlZzNULllmkBeoPJVpu-5w&usqp=CAU&ec=48600112">
+                    <div class="popular-artist-text">
+                        <div>Wish You The Best</div>
+                        <div class="latest-song-date"> April 13, 2023</div>
+                    </div>
+                </div>
+
+                <div class="text-latest-eng-songs">
+                    <img class="english-song-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs85-XXdgPCk8S_g9NKZ6-8irXd9zwRTYnjauU0ySK5g&usqp=CAU&ec=48600112">
+                    <div class="popular-artist-text">
+                        <div>Boy's a liar Pt. 2</div>
+                        <div class="latest-song-date"> Feb 3, 2023</div>
+                    </div>
+                </div>
+
+                <div class="text-latest-eng-songs">
+                    <img class="english-song-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs85-XXdgPCk8S_g9NKZ6-8irXd9zwRTYnjauU0ySK5g&usqp=CAU&ec=48600112">
+                    <div class="popular-artist-text">
+                        <div>Boy's a liar Pt. 2</div>
+                        <div class="latest-song-date"> Feb 3, 2023</div>
+                    </div>
+                </div>
+
+                <div class="text-latest-eng-songs">
+                    <img class="english-song-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs85-XXdgPCk8S_g9NKZ6-8irXd9zwRTYnjauU0ySK5g&usqp=CAU&ec=48600112">
+                    <div class="popular-artist-text">
+                        <div>Boy's a liar Pt. 2</div>
+                        <div class="latest-song-date"> Feb 3, 2023</div>
+                    </div>
+                </div>
+
+                <div class="text-latest-eng-songs">
+                    <img class="english-song-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs85-XXdgPCk8S_g9NKZ6-8irXd9zwRTYnjauU0ySK5g&usqp=CAU&ec=48600112">
+                    <div class="popular-artist-text">
+                        <div>Boy's a liar Pt. 2</div>
+                        <div class="latest-song-date"> Feb 3, 2023</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------------------------------------latest-hindi-songs--------------------------------------- -->
+
+            <div class="latest-release">Latest Hindi Songs</div>
+
+            <div class="popular-artists">
+
+                <div class="text-latest-eng-songs">
+                    <img class="english-song-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvX5X92kEx5AtrFRew5UG5zUlIuRPeniMILNVyJO7qww&usqp=CAU&ec=48600112">
+                    <div class="popular-artist-text">
+                        <div>Song Name</div>
+                        <div class="latest-song-date"> April 29, 2023</div>
+                    </div>
+                </div>
+
+                <div class="text-latest-eng-songs">
+                    <img class="english-song-img"
+                        src="https://assets.capitalfm.com/2022/43/ed-sheeran--1666953393-editorial-short-form-0.jpg">
+                    <div class="popular-artist-text">
+                        <div>Song Name</div>
+                        <div class="latest-song-date"> April 29, 2023</div>
+                    </div>
+                </div>
+
+                <div class="text-latest-eng-songs">
+                    <img class="english-song-img"
+                        src="https://assets.capitalfm.com/2022/43/ed-sheeran--1666953393-editorial-short-form-0.jpg">
+                    <div class="popular-artist-text">
+                        <div>Song Name</div>
+                        <div class="latest-song-date"> April 29, 2023</div>
+                    </div>
+                </div>
+
+                <div class="text-latest-eng-songs">
+                    <img class="english-song-img"
+                        src="https://assets.capitalfm.com/2022/43/ed-sheeran--1666953393-editorial-short-form-0.jpg">
+                    <div class="popular-artist-text">
+                        <div>Song Name</div>
+                        <div class="latest-song-date"> April 29, 2023</div>
+                    </div>
+                </div>
+
+                <div class="text-latest-eng-songs">
+                    <img class="english-song-img"
+                        src="https://assets.capitalfm.com/2022/43/ed-sheeran--1666953393-editorial-short-form-0.jpg">
+                    <div class="popular-artist-text">
+                        <div>Song Name</div>
+                        <div class="latest-song-date"> April 29, 2023</div>
+                    </div>
+                </div>
+
+                <div class="text-latest-eng-songs">
+                    <img class="english-song-img"
+                        src="https://assets.capitalfm.com/2022/43/ed-sheeran--1666953393-editorial-short-form-0.jpg">
+                    <div class="popular-artist-text">
+                        <div>Song Name</div>
+                        <div class="latest-song-date"> April 29, 2023</div>
+                    </div>
+                </div>
+
+                <div class="text-latest-eng-songs">
+                    <img class="english-song-img"
+                        src="https://assets.capitalfm.com/2022/43/ed-sheeran--1666953393-editorial-short-form-0.jpg">
+                    <div class="popular-artist-text">
+                        <div>Song Name</div>
+                        <div class="latest-song-date"> April 29, 2023</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- --------------------------------------------------aside section-------------------------------------------------- -->
+        <aside id="aside-section">
+            <div class="complete-recently-played-section">
+                <div class="aside-colour-setting-recent">
+                    <span id="similar-artists-recent"> Queue </span>
+                    <span class="view-all">
+                        <div class="down-icon-q">Queue <i class="fa-solid fa-angle-down angle-down-arrow"></i></div>
+
+                        <div class="pop-up-click-hov">
+                            <div class="p-f-s">
+                                <i class="ri-play-list-line"></i>
+                                Playlists
+                            </div>
+                            <hr />
+                            <div class="p-f-s">
+                                <i class="fa-solid fa-heart"></i>
+                                Favourite Songs
+                            </div>
+                        </div>
+                    </span>
+                </div>
+
+
+                <div>
+                    <div class="image-imagine-band">
+                        <div class="img-padding">
+                            <!-- <audio id="myAudio" src="../Projects/musicplayer-project/music res/Closer - The Chainsmokers-(DJMaza).mp3"></audio> -->
+                           
+                            <div class="num-before-img">01</div>
+                            <div class="queue-images">
+                               
+                                <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                            
+                                <img class="music-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIQiVwtmlU8sfKJyGRLe1SLpw1Q3DPEKpOGCSQZiNDQ&usqp=CAU&ec=48600112">
+                                <img class="music-img background-img-recent"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIQiVwtmlU8sfKJyGRLe1SLpw1Q3DPEKpOGCSQZiNDQ&usqp=CAU&ec=48600112">
+                            </div>
+                            <span class="imagine-band-recent">
+                                <div class="imagine">Spectre</div>
+                                <p class="band">Alan Walker</p>
+                            </span>
+                       
+                            <div class="dots-duration">
+                                <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                            </div>
+                           
+                           
+	
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-imagine-band">
+                        <div class="img-padding">
+                            <div class="num-before-img">02</div>
+                            <div class="queue-images">
+                                <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                <img class="music-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3xQgT44XnyFnYvsyK09KKVJP_zmDdsRdDxbQ8Lv_o3w&usqp=CAU&ec=48600112"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3xQgT44XnyFnYvsyK09KKVJP_zmDdsRdDxbQ8Lv_o3w&usqp=CAU&ec=48600112">
+                            </div>
+                            <span class="imagine-band-recent">
+                                <div class="imagine">Make MY Love Go</div>
+
+                                <p class="band">Jay Sean</p>
+                            </span>
+                            <div class="dots-duration">
+                                <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-imagine-band">
+                        <div class="img-padding">
+                            <div class="num-before-img">03</div>
+                            <div class="queue-images">
+                                <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                <img class="music-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzyaMCiGtCgWozCizVUq7PIVozLWqOPepkHxwqi5bEmQ&usqp=CAU&ec=48600112"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzyaMCiGtCgWozCizVUq7PIVozLWqOPepkHxwqi5bEmQ&usqp=CAU&ec=48600112">
+                            </div>
+                            <span class="imagine-band-recent">
+                                <div class="imagine">Chasing Dreams</div>
+
+                                <p class="band">Bradley Walsh</p>
+                            </span>
+                            <div class="dots-duration">
+                                <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-imagine-band">
+                        <div class="img-padding">
+                            <div class="num-before-img">04</div>
+                            <div class="queue-images">
+                                <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                <img class="music-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPUJMGX5IPCpGnPECRt6JUCVfTKvhMFNXEyjqzwZrdKA&usqp=CAU&ec=48600112"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPUJMGX5IPCpGnPECRt6JUCVfTKvhMFNXEyjqzwZrdKA&usqp=CAU&ec=48600112">
+                            </div>
+                            <span class="imagine-band-recent">
+                                <div class="imagine">Don't Let Me Down</div>
+
+                                <p class="band"> The Chainsmokers</p>
+                            </span>
+                            <div class="dots-duration">
+                                <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-imagine-band">
+                        <div class="img-padding">
+                            <div class="num-before-img">05</div>
+                            <div class="queue-images">
+                                <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                <img class="music-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc074PA5YJZJdbV7CI02gaX5HlYET8TxNmSKDjNhQ8dQ&usqp=CAU&ec=48600112"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc074PA5YJZJdbV7CI02gaX5HlYET8TxNmSKDjNhQ8dQ&usqp=CAU&ec=48600112">
+                            </div>
+                            <span class="imagine-band-recent">
+                                <div class="imagine">Work From Home</div>
+
+                                <p class="band"> Fifth Harmony</p>
+                            </span>
+                            <div class="dots-duration">
+                                <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-imagine-band">
+                        <div class="img-padding">
+                            <div class="num-before-img">06</div>
+                            <div class="queue-images">
+                                <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                <img class="music-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq8NQveAgqX6Zh7muzRVNypnpWi-tJsZaWWr2mjJ0EbQ&usqp=CAU&ec=48600112">
+                                <img class="music-img background-img-recent"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq8NQveAgqX6Zh7muzRVNypnpWi-tJsZaWWr2mjJ0EbQ&usqp=CAU&ec=48600112">
+                            </div>
+                            <span class="imagine-band-recent">
+                                <div class="imagine">Used To This</div>
+
+                                <p class="band"> Future</p>
+                            </span>
+                            <div class="dots-duration">
+                                <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-imagine-band">
+                        <div class="img-padding">
+                            <div class="num-before-img">07</div>
+                            <div class="queue-images">
+                                <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                <img class="music-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbzOGoC7002oGOrpTVWyVyTpt32SYzdLZRwvpZQEc29A&usqp=CAU&ec=48600112">
+                                <img class="music-img background-img-recent"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbzOGoC7002oGOrpTVWyVyTpt32SYzdLZRwvpZQEc29A&usqp=CAU&ec=48600112">
+                            </div>
+                            <span class="imagine-band-recent">
+                                <div class="imagine">Thinking About You</div>
+
+                                <p class="band"> Hardwell</p>
+                            </span>
+                            <div class="dots-duration">
+                                <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-imagine-band">
+                        <div class="img-padding">
+                            <div class="num-before-img">08</div>
+                            <div class="queue-images">
+                                <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                <img class="music-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTThYB-lzo5Z4xRioW9RAcZaxGmZpof_f7pjTk2As71Cg&usqp=CAU&ec=48600112">
+                                <img class="music-img background-img-recent"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTThYB-lzo5Z4xRioW9RAcZaxGmZpof_f7pjTk2As71Cg&usqp=CAU&ec=48600112">
+                            </div>
+                            <span class="imagine-band-recent">
+                                <div class="imagine">See You Again</div>
+
+                                <p class="band"> Wiz Khalifa</p>
+                            </span>
+                            <div class="dots-duration">
+                                <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-imagine-band">
+                        <div class="img-padding">
+
+                            <div class="num-before-img">09</div>
+                            <div class="queue-images">
+                                <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                <img class="music-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvJS68xUCo05430G5yXVqMh9TvjONX8hAhJt9z8m0UIA&usqp=CAU&ec=48600112">
+                                <img class="music-img background-img-recent"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvJS68xUCo05430G5yXVqMh9TvjONX8hAhJt9z8m0UIA&usqp=CAU&ec=48600112">
+                            </div>
+                            <span class="imagine-band-recent">
+                                <div class="imagine">We Don't Talk Anymore</div>
+                                <p class="band">Charlie Puth</p>
+                            </span>
+                            <div class="dots-duration">
+                                <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-imagine-band">
+                        <div class="img-padding">
+
+                            <div class="num-before-img">10</div>
+                            <div class="queue-images">
+                                <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                <img class="music-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmif6hjN3QXEHXlFXqjHaR1k9VZEvcNiYzWgRRcNrYkA&usqp=CAU&ec=48600112">
+                                <img class="music-img background-img-recent"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmif6hjN3QXEHXlFXqjHaR1k9VZEvcNiYzWgRRcNrYkA&usqp=CAU&ec=48600112">
+                            </div>
+                            <span class="imagine-band-recent">
+                                <div class="imagine">I'm Not The Only One</div>
+                                <p class="band">Sam Smith</p>
+                            </span>
+                            <div class="dots-duration">
+                                <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-imagine-band">
+                        <div class="img-padding">
+
+                            <div class="num-before-img">11</div>
+                            <div class="queue-images">
+                                <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                <img class="music-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqclfmmYIm2y-lLJoK9lHQOsqPgBLV6fhL2TiKAWaGPA&usqp=CAU&ec=48600112">
+                                <img class="music-img background-img-recent"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqclfmmYIm2y-lLJoK9lHQOsqPgBLV6fhL2TiKAWaGPA&usqp=CAU&ec=48600112">
+                            </div>
+                            <span class="imagine-band-recent">
+                                <div class="imagine">Heathens</div>
+                                <p class="band">Twenty One</p>
+                            </span>
+                            <div class="dots-duration">
+                                <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-imagine-band">
+                        <div class="img-padding">
+
+                            <div class="num-before-img">12</div>
+                            <div class="queue-images">
+                                <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                <img class="music-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zkEa-Nya3z7VWJnbuWtoR4y-wkXEBieXDqpSLiegEA&usqp=CAU&ec=48600112">
+                                <img class="music-img background-img-recent"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zkEa-Nya3z7VWJnbuWtoR4y-wkXEBieXDqpSLiegEA&usqp=CAU&ec=48600112">
+                            </div>
+                            <span class="imagine-band-recent">
+                                <div class="imagine">Tik Tok</div>
+                                <p class="band">Kesha</p>
+                            </span>
+                            <div class="dots-duration">
+                                <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-imagine-band">
+                        <div class="img-padding">
+
+                            <div class="num-before-img">13</div>
+                            <div class="queue-images">
+                                <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                <img class="music-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSWomIxNvjcHOgn-ciGjPhY1fnoxCzf55tEGwZJXvyA&usqp=CAU&ec=48600112">
+                                <img class="music-img background-img-recent"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSWomIxNvjcHOgn-ciGjPhY1fnoxCzf55tEGwZJXvyA&usqp=CAU&ec=48600112">
+                            </div>
+                            <span class="imagine-band-recent">
+                                <div class="imagine">Sure Thing</div>
+                                <p class="band">Miguel</p>
+                            </span>
+                            <div class="dots-duration">
+                                <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-imagine-band">
+                        <div class="img-padding">
+
+                            <div class="num-before-img">14</div>
+                            <div class="queue-images">
+                                <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                <img class="music-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLU3cuz_MOr2EBndJV1p6CFzWp-9m78QA9mK_ragkZuQ&usqp=CAU&ec=48600112">
+                                <img class="music-img background-img-recent"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLU3cuz_MOr2EBndJV1p6CFzWp-9m78QA9mK_ragkZuQ&usqp=CAU&ec=48600112">
+                            </div>
+                            <span class="imagine-band-recent">
+                                <div class="imagine">Hey Baby</div>
+                                <p class="band">Diplo</p>
+                            </span>
+                            <div class="dots-duration">
+                                <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="image-imagine-band">
+                        <div class="img-padding">
+
+                            <div class="num-before-img">15</div>
+                            <div class="queue-images">
+                                <i class="fa-solid fa-play r-p-play-icon-edit"></i>
+                                <img class="music-img"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYXnEMJxuegzgs87k8-IGvbWropFxbAWGkP9ZzF3rIpA&usqp=CAU&ec=48600112">
+                                <img class="music-img background-img-recent"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYXnEMJxuegzgs87k8-IGvbWropFxbAWGkP9ZzF3rIpA&usqp=CAU&ec=48600112">
+                            </div>
+                            <span class="imagine-band-recent">
+                                <div class="imagine">This One's For You</div>
+                                <p class="band">David guetta</p>
+                            </span>
+                            <div class="dots-duration">
+                                <i class="fa-sharp fa-regular fa-heart like-heart-icon"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+    </div>
+    
+    <div class="music-player-elements">
+        <div class="img-text-icons">
+            <div>
+                <img class="media-player-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9As9XjlzYIok7NgiRiutxDDAUqlkjzezP9mPLa3rpcA&usqp=CAU&ec=48600112">
+            </div> 
+            <div class="media-text-author">
+                <div class="scrolling-text">
+                    <p>This text will scroll horizontally</p>
+                </div>
+                <div class="media-author-name">
+                    Alan Walker
+                </div>
+            </div>
+            <div class="media-ban-heart">
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-ban"></i>
+                </div>
+            </div>
+      </div>
+
+        <div class="middle-icons-bar">
+            <div class="all-mid-icons">
+                <div class="media-list-icon"> <i class="fa-solid fa-shuffle "></i> </div>
+                <div> <i class="fa-solid fa-backward-step"></i></div>
+                <div> <i class="fa-regular fa-circle-pause pause-play-button"></i> </div>
+                <div><i class="fa-solid fa-forward-step"></i> </div>
+                <div class="media-list-icon"> <i class="fa-solid fa-repeat "></i> </div>
+            </div>
+
+            <div class="progress-bar-main media-list-icon"> 
+                <div class="media-time"> 2:00</div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="media-time"> 5:00</div>
+            </div>
+
+        </div>
+
+        <div class="list-volume-expand-icon media-list-icon"> 
+            <div> <i class="ri-play-list-2-line "></i></div>
+            <div> <i class="fa-solid fa-sliders "></i></div>
+            <div> <i class="fa-solid fa-volume-high "></i></div>
+            <div class="volume-bar ">
+                <div class="volume"></div>
+                <div class="volume-handle"></div>
+            </div>
+            <div> <i class="fa-solid fa-up-right-and-down-left-from-center "></i></div>
+           
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
